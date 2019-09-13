@@ -1,29 +1,21 @@
 def merge_sort(arr):
-
     if len(arr) <= 1:
         return arr
 
     midpoint = int(len(arr) / 2)
-
     left, right = merge_sort(arr[:midpoint]), merge_sort(arr[midpoint:])
-
     return merge(left, right)
 
 
 def merge(left, right):
-
     result = []
     lp = rp = 0
 
     while lp < len(left) and rp < len(right):
-
         if left[lp] < right[rp]:
-
             result.append(left[lp])
             lp += 1
-
         else:
-
             result.append(right[rp])
             rp += 1
 
