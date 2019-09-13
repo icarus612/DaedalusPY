@@ -81,3 +81,6 @@ class Vertex:
 
 	def get_edges(self):
 		return list(self.edges.keys())
+	
+	def remove_edge(self, edge):
+		self.edges.pop(edge, None)
