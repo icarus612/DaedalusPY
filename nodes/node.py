@@ -12,7 +12,6 @@ class Node:
 	def set_next_node(self, next_node):
 		self.next_node = next_node
 
-
 class LinkedList:
 	def __init__(self, value=None):
 		self.head_node = Node(value)
@@ -66,7 +65,6 @@ class TreeNode:
 			print(current_node.value)
 			nodes_to_visit += current_node.children
 
-
 class Vertex:
 	def __init__(self, value):
 		self.value = value
@@ -80,9 +78,6 @@ class Vertex:
 	
 	def remove_edge(self, edge):
 		self.edges.pop(edge, None) 
-
-
-
 
 class Graph:
 	def __init__(self, directed = False):
