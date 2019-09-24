@@ -1,5 +1,5 @@
 from random import randrange
-from node import Vertex, Graph
+from graph import Vertex, Graph
 
 def print_graph(graph):
 	for vertex in graph.graph_dict:
